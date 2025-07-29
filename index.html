@@ -15,9 +15,12 @@
     <!-- Buttons centered below the form -->
     <div class="button-group">
         <button type="button" onclick="showSecondForm()">View Information</button>
-        <button type="reset" form="form1">Reset</button>
+        
     </div>
 
+    <div id="successMessage" class="success-message">
+        Data added successfully!
+    </div>
     <div class="second-form" id="secondForm">
         <form id="secondFormFields">
             <label for="username">Username</label>
@@ -32,8 +35,6 @@
                 <input type="password" placeholder="Enter passoword" id="pass-input" name="password" required /><span
                     class="toggle-password" onclick="togglePasswordVisibility()">&#128065;</span>
             </div>
-
-            
             -->
             <div class="form-group">
                 <label for="password">Password</label>
@@ -71,11 +72,14 @@
             <input type="text" id="pincode" placeholder="Enter your pin code"><br><br>
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
+            <button onclick="showSpinner(),closeFormTwo()">Close</button>
             <br />
 
         </form>
     </div>
-
+    <div id="spinner" class="spinner-overlay">
+        <div class="spinner"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 
