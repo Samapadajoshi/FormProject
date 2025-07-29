@@ -19,19 +19,21 @@ body {
 
 .password-wrapper {
     position: relative;
-    width: fit-content;
+    display: flex;
+    align-items: center;
 }
 
-.password-wrapper span {
-    padding-left: 30px;
+.password-wrapper input {
+    flex-grow: 1;
+    padding-right: 40px;
     /* space for the eye icon */
 }
 
 .toggle-password {
     position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
+    /* top: 50%; */
+    right: 10px;
+    /*transform: translateY(-50%);*/
     cursor: pointer;
     font-size: 18px;
 }
