@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="header">Login Page</div>
+
+    <!-- Buttons centered below the form -->
+    <div class="button-group">
+        <button type="button" onclick="showSecondForm()">View Information</button>
+        <button type="reset" form="form1">Reset</button>
+    </div>
+
+    <div class="second-form" id="secondForm">
+        <form id="secondFormFields">
+            <label for="username">Username</label>
+            <br />
+            <input type="text" placeholder="Enter your email id" id="username" name="username" required minlength="4"
+                maxlength="20" />
+            <br /><br />
+
+            <div class="password-wrapper">
+                <label for="pass-input">Password</label>
+                <br />
+                <input type="password" placeholder="Enter passoword" id="pass-input" name="password" required /><span
+                    class="toggle-password" onclick="togglePasswordVisibility()">👁️</span>
+            </div>
+            <br /><br />
+
+            <label for name="gender">Gender</label>
+            <br />
+            <input type="radio" id="male" name="gender" value="male" required />
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="female" required />
+            <label for="female">Female</label>
+
+            <input type="radio" id="others" name="gender" value="others" required />
+            <label for="others">Others</label>
+            <br /><br />
+
+            <label for="number">Mobile Number</label>
+            <br />
+            <input type="number" id="number" placeholder="Enter Mobile Number" />
+
+            <br /><br />
+            <label>Address</label><br>
+            <input type="text" id="address" placeholder="Enter your address"><br><br>
+
+            <label>City</label><br>
+            <input type="text" id="city" placeholder="Enter your city"><br><br>
+
+            <label>Pin Code</label><br>
+            <input type="text" id="pincode" placeholder="Enter your pin code"><br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <br />
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
